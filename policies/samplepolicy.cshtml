@@ -1,0 +1,24 @@
+<policies>
+    <inbound>
+        <base/>
+    <find-and-replace from="foo" to="@(System.DateTime.Now.ToString())" />
+    <choose>
+        <when condition="@(context.Api.Name.Equals("foo"))">
+            @{
+                return context.Response.Body.ToString();
+            }
+        </when>
+        <otherwise>
+        </otherwise>
+    </choose>
+    </inbound>
+    <backend>
+        <base/>
+    </backend>
+    <outbound>
+        <base/>
+    </outbound>
+    <on-error>
+        <base/>
+    </on-error>
+</policies>
