@@ -14,7 +14,7 @@ The Context.cs has all the types needed to suffice context variable and its prop
 
 The _ViewImports.cshtml injects context variable into all cshtml files. Making context variable accessible to all policy files.
 
-This can take further to have tag helpers.
+This project can be taken further to have tag helpers.
 
 ![Test](test.gif)
 
