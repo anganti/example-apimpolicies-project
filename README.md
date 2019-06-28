@@ -42,3 +42,5 @@ Run "dotnet build"
 
 TADA!! Now you are setup to work with policy documents. With completions for context variable and standard .net libraries.
 
+![Extension](extension.gif)
+
